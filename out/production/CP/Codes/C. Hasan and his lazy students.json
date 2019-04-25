@@ -1,0 +1,47 @@
+{
+  "name" : "C. Hasan and his lazy students",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\n5\n1 3 2 3 1\n3\n1 2 3\n7\n1 5 6 2 1 4 1\n",
+    "output" : "3 1\n3 1\n3 2",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1\n3\n1 2 3",
+    "output" : "3 1",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1\n8\n1 3 3 3 4 1 2 3",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "1\n4\n4 3 2 1",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/Codes",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "Codes.CHasanAndHisLazyStudents",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ "Codes.CHasanAndHisLazyStudentsTestCase" ],
+  "date" : "2019.04.17",
+  "contestName" : "trainingForQualification-1",
+  "truncate" : true,
+  "inputClass" : "FastIO.inputClass",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

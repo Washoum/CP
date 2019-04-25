@@ -1,0 +1,39 @@
+{
+  "name" : "A",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2 6\n _ _ _ _ _ _\n|  _ _ _ _ _|\n|_ _ _ _ _ _|\n5\n1 5\n1 1\n1 6\n1 1\n1 5",
+    "output" : "18",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5 5\n _ _ _ _ _ \n|_ _  |_  |\n|  _| |  _|\n| |_   _| |\n|    _ _  |\n|_|_ _ _|_|\n7\n4 4\n1 4\n3 1\n4 5\n1 2\n2 2\n5 4\n",
+    "output" : "43",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/Codes",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "Codes.A",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.06",
+  "contestName" : "Codeforces Global Round 2",
+  "truncate" : true,
+  "inputClass" : "FastIO.inputClass",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
