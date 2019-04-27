@@ -14,37 +14,36 @@ public class DBeautifulGraph {
 
     static class Pair{
         int x,y;
-        Pair( int a, int b){
+        int from;
+        Pair( int a, int b, int c){
             x=a;
             y=b;
+            from=c;
         }
     }
     static long ans;
     static void bfs(int a,int parity){
         LinkedList<Pair> queu=new LinkedList<>();
-        queu.addLast(new Pair(a,parity));
+        queu.addLast(new Pair(a,parity,-1));
         visited[a]=parity;
         int act;
         Pair p;
         while (!queu.isEmpty()){
             p=queu.pollFirst();
             act=p.x;
+            if(p.y==1){
+                ans*=2;
+                ans%=998244353;
+            }
             for (int i : graph[act].edges){
+                if (i==p.from) continue;
                 if (visited[i]==-1) {
                     visited[i]=(parity + 1) % 2;
-                    queu.addLast(new Pair(i, (parity + 1) % 2));
-                    if(p.y==1){
-                        ans*=2;
-                        ans%=998244353;
-                    }
+                    queu.addLast(new Pair(i, (p.y + 1) % 2,act));
                 }
                 else{
                     if (visited[i]==p.y){
                         ans=0;
-                    }
-                    else if (p.y==1){
-                        ans*=2;
-                        ans%=998244353;
                     }
                 }
             }
@@ -73,11 +72,27 @@ public class DBeautifulGraph {
                 graph[x].edges.add(y);
                 graph[y].edges.add(x);
             }
+            long a=1;
             Arrays.fill(visited,-1);
-            bfs(0,0);
+            for (int i=0;i<n;i++){
+                if (visited[i]==-1) {
+                    bfs(i, 0);
+                    a *= ans;
+                    ans = 1;
+                    a%=998244353;
+                }
+            }
+            long b=1;
             Arrays.fill(visited,-1);
-            bfs(0,1);
-            out.println(ans);
+            for (int i=0;i<n;i++){
+                if (visited[i]==-1) {
+                    bfs(i, 1);
+                    b *= ans;
+                    b%=998244353;
+                    ans = 1;
+                }
+            }
+            out.println((a+b)%998244353);
 
 
         }
