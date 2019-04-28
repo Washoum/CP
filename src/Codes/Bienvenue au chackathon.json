@@ -1,0 +1,34 @@
+{
+  "name" : "Bienvenue au chackathon",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\nbienvenue au chackathon\nbbbiiienvenue au ccchackathon\nenvenue au chackathonib\n",
+    "output" : "0001\n0027\n0000\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "src/Codes",
+  "vmArgs" : "-Xmx5M",
+  "mainClass" : "Main",
+  "taskClass" : "Codes.BienvenueAuChackathon",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.27",
+  "contestName" : "HackerEarth - Carthage Hackathon 2.0",
+  "truncate" : true,
+  "inputClass" : "FastIO.inputClass",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

@@ -1,0 +1,38 @@
+{
+  "name" : "Recyclage",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4\n1 5\n30 90\n320 450\n100 500\n",
+    "output" : "0\n15\n24\n156\n",
+    "index" : 0,
+    "active" : false
+  }, {
+    "input" : "2\n1 999\n1 1000",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/Codes",
+  "vmArgs" : "-Xmx60M",
+  "mainClass" : "Main",
+  "taskClass" : "Codes.Recyclage",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.28",
+  "contestName" : "HackerEarth - Carthage Hackathon 2.0",
+  "truncate" : true,
+  "inputClass" : "FastIO.inputClass",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

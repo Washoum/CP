@@ -1,0 +1,38 @@
+{
+  "name" : "Orange",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n1 1 9 1 1\n3 1 9 7 1\n4 1 9 1 1\n5 1 1 1 5\n6 1 9 3 1\n",
+    "output" : "9\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "3\n1 1 1\n2 2 2\n2 3 3",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/Codes",
+  "vmArgs" : "-Xmx30M",
+  "mainClass" : "Main",
+  "taskClass" : "Codes.Orange",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.04.27",
+  "contestName" : "HackerEarth - Carthage Hackathon 2.0",
+  "truncate" : true,
+  "inputClass" : "FastIO.inputClass",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
