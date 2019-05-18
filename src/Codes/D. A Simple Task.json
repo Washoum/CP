@@ -1,0 +1,34 @@
+{
+  "name" : "D. A Simple Task",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "4 6\n1 2\n1 3\n1 4\n2 3\n2 4\n3 4\n",
+    "output" : "7\n",
+    "index" : 0,
+    "active" : true
+  } ],
+  "location" : "src/Codes",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "Codes.DASimpleTask",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.05.09",
+  "contestName" : "Codeforces Beta Round #11",
+  "truncate" : true,
+  "inputClass" : "FastIO.inputClass",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

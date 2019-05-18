@@ -1,0 +1,54 @@
+{
+  "name" : "B2. Cat Party (Hard Edition)",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "13\n1 1 1 2 2 2 3 3 3 4 4 4 5\n",
+    "output" : "13\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "5\n10 100 20 200 1\n",
+    "output" : "5\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "1\n100000\n",
+    "output" : "1\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "7\n3 2 1 1 4 5 1\n",
+    "output" : "6\n",
+    "index" : 3,
+    "active" : true
+  }, {
+    "input" : "6\n1 1 1 2 2 2\n",
+    "output" : "5\n",
+    "index" : 4,
+    "active" : true
+  } ],
+  "location" : "src/Codes",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "Codes.B2CatPartyHardEdition",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.05.09",
+  "contestName" : "Codeforces Round #558 (Div. 2)",
+  "truncate" : true,
+  "inputClass" : "FastIO.inputClass",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

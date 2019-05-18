@@ -1,0 +1,44 @@
+{
+  "name" : "C - Five Transportations",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n3\n2\n4\n3\n5\n",
+    "output" : "7\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "10\n123\n123\n123\n123\n123\n",
+    "output" : "5\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "10000000007\n2\n3\n5\n7\n11\n",
+    "output" : "5000000008\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/Codes",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "Codes.CFiveTransportations",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.05.08",
+  "contestName" : "AtCoder Beginner Contest 123",
+  "truncate" : true,
+  "inputClass" : "FastIO.inputClass",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

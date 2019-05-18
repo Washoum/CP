@@ -1,0 +1,44 @@
+{
+  "name" : "E. Two Arrays and Sum of Functions",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "5\n1 8 7 2 4\n9 7 2 9 3\n",
+    "output" : "646\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "1\n1000000\n1000000\n",
+    "output" : "757402647\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "2\n1 3\n4 2\n",
+    "output" : "20\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/Codes",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "Codes.ETwoArraysAndSumOfFunctions",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.05.17",
+  "contestName" : "Codeforces Round #560 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "FastIO.inputClass",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

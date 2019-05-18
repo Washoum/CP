@@ -1,0 +1,48 @@
+{
+  "name" : "D. Bicolored RBS",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2\n()\n",
+    "output" : "11\n",
+    "index" : 0,
+    "active" : true
+  }, {
+    "input" : "4\n(())\n",
+    "output" : "0101\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "10\n((()())())\n",
+    "output" : "0110001111\n",
+    "index" : 2,
+    "active" : true
+  }, {
+    "input" : "6\n(()())",
+    "index" : 3,
+    "active" : true
+  } ],
+  "location" : "src/Codes",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "Codes.DBicoloredRBS",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.05.16",
+  "contestName" : "Educational Codeforces Round 65 (Rated for Div. 2)",
+  "truncate" : true,
+  "inputClass" : "FastIO.inputClass",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

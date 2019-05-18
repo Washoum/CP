@@ -1,0 +1,39 @@
+{
+  "name" : "D. Almost All Divisors",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "2\n8\n8 2 12 6 4 24 16 3\n1\n2\n",
+    "output" : "48\n4\n",
+    "index" : 0,
+    "active" : false
+  }, {
+    "input" : "1\n13\n802 5 401 4010 62 2 12431 62155 310 10 31 2005 24862\n",
+    "output" : "-1",
+    "index" : 1,
+    "active" : true
+  } ],
+  "location" : "src/Codes",
+  "vmArgs" : "-Xmx256M",
+  "mainClass" : "Main",
+  "taskClass" : "Codes.DAlmostAllDivisors",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.05.16",
+  "contestName" : "Codeforces Round #560 (Div. 3)",
+  "truncate" : true,
+  "inputClass" : "FastIO.inputClass",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}

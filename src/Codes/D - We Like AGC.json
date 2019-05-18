@@ -1,0 +1,44 @@
+{
+  "name" : "D - We Like AGC",
+  "testType" : "SINGLE",
+  "input" : {
+    "type" : "STANDARD",
+    "fileName" : "input.txt"
+  },
+  "output" : {
+    "type" : "STANDARD",
+    "fileName" : "output.txt"
+  },
+  "tests" : [ {
+    "input" : "3\n",
+    "output" : "61\n",
+    "index" : 0,
+    "active" : false
+  }, {
+    "input" : "4\n",
+    "output" : "230\n",
+    "index" : 1,
+    "active" : true
+  }, {
+    "input" : "100\n",
+    "output" : "388130742\n",
+    "index" : 2,
+    "active" : true
+  } ],
+  "location" : "src/Codes",
+  "vmArgs" : "-Xmx1024M",
+  "mainClass" : "Main",
+  "taskClass" : "Codes.DWeLikeAGC",
+  "checkerClass" : "net.egork.chelper.checkers.TokenChecker",
+  "checkerParameters" : "",
+  "testClasses" : [ ],
+  "date" : "2019.05.08",
+  "contestName" : "AtCoder Beginner Contest 122",
+  "truncate" : true,
+  "inputClass" : "FastIO.inputClass",
+  "outputClass" : "java.io.PrintWriter",
+  "includeLocale" : false,
+  "failOnOverflow" : false,
+  "interactive" : false,
+  "interactor" : "net.egork.chelper.tester.Interactor"
+}
